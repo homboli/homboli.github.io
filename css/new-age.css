@@ -179,7 +179,7 @@ header.masthead .device-container .screen img {
 
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
+    min-height: 100vh;
     min-height: 775px;
     padding-top: 0;
     padding-bottom: 0;
@@ -193,6 +193,12 @@ header.masthead .device-container .screen img {
   }
   header.masthead .device-container {
     max-width: 325px;
+  }
+}
+
+@media (max-width: 768px) {
+  header.masthead {
+    background-position: top right;
   }
 }
 
@@ -285,7 +291,7 @@ section.technology .feature-item h3 {
 section.cta {
   position: relative;
   padding: 250px 0;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pots.jpg");
   background-position: center;
   background-size: cover;
@@ -452,9 +458,21 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 section.team {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.team h2 {
+  margin-bottom: 30px;
 }
 
 .product-image{
   max-width: 500px;
+}
+
+.fas {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7);
 }
